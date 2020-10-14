@@ -43,4 +43,4 @@ def index():
     return render_template('index_ch4.html', form = form, name = session.get('name'), email = session.get('email'))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")
